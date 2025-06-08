@@ -1,0 +1,209 @@
+/* RESET & DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: url('images/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #d5e8cc;
+}
+
+/* HEADER */
+.header {
+  background-color: #85bf6b;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.site-title {
+  font-size: 24px;
+  color: #1b2e13;
+  font-weight: bold;
+}
+
+/* KONTEN UTAMA */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 30px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.image-box {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tree-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.filename {
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #6b9362;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.subtitle {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2f4f2f;
+}
+
+.age-box {
+  background-color: #cfe5cc;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 2px solid #444;
+}
+
+.age-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* ILUSTRASI TINGKAT PERTUMBUHAN */
+.illustration {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  padding-top: 60px;
+  flex-wrap: wrap;
+}
+
+.tree-level {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.tree-stage {
+  display: block;
+  margin: 0 auto;
+}
+
+.level-1 .tree-stage { width: 40px; }
+.level-2 .tree-stage { width: 60px; }
+.level-3 .tree-stage { width: 80px; }
+.level-4 .tree-stage { width: 100px; }
+.level-5 .tree-stage { width: 120px; }
+
+.tree-level.dimmed {
+  opacity: 0.3;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background-color: #77c072;
+  padding: 20px 20px 40px;
+  color: #000;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box
+}
+
+.footer-logo-center {
+  margin-bottom: 10px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-line {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  width: 100%;
+  margin: 10px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: left;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-right h4 {
+  margin-bottom: 10px;
+}
+
+.footer-right p,
+.footer-left p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-right i {
+  margin-right: 8px;
+}
